@@ -162,6 +162,7 @@
     thunderbird				# email client
     gh					# github cli
     eww					# elkowars wacky widgets
+    pywalfox-native			# for firefox and thudnerbird styling
     ];
 
   # Some programs need SUID wrappers, can be configured further or are
