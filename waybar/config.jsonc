@@ -11,18 +11,15 @@
         "hyprland/workspaces",
         "custom/media"
     ],
-    // "modules-center": [
-    //     "hyprland/window"
-    // ],
+    "modules-center": [
+         "clock"
+    ],
     "modules-right": [
         "idle_inhibitor",
         "pulseaudio",
         "network",
-        "cpu",
-        "memory",
         "temperature",
-        "hyprland/language",
-        "clock",
+        "cpu",
         "tray",
         "custom/power"
     ],
@@ -31,11 +28,26 @@
          "disable-scroll": true,
          "all-outputs": true,
          "warp-on-scroll": false,
-         "format": "{icon}",
-         "format-icons": {
-             "urgent": "",
-             "active": "",
-             "default": ""
+         "show-special": true,
+         "format": "{name} {windows}",
+         "format-window-separator": " ",
+         "window-rewrite-default": "",
+         "window-rewrite": {
+             "class<firefox>": "",
+             "class<kitty>": "",
+             "class<Darktable>": "󰄄",
+             "class<sqlitebrowser>": "",
+             "class<audacious>": "",
+             "class<WebCord>": "",
+             "title<Yazi>": "",
+             "class<Slack>": "",
+             "class<libreoffice-writer>": "",
+             "title<hyprland.conf>": "",
+             "title<btop>": "󰓅",
+             "class<.*gimp.*>": "",
+             "title<configuation.nix>": "󱄅",
+             "class<.*minecraft.*>": "󰍳",
+             "class<.*launcher.*>": "󱓟"
          }
      }, 
     "hyprland/scratchpad": {
@@ -82,25 +94,23 @@
         // "icon-size": 21,
         "spacing": 10
     },
-    "clock": {
-        // "timezone": "America/New_York",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
-    },
-    "cpu": {
-        "format": "{usage}% ",
-        "tooltip": false
-    },
-    "memory": {
-        "format": "{}% "
-    },
     "temperature": {
         "thermal-zone": 2,
         "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
         "critical-threshold": 80,
-        "format-critical": "{temperatureC}°C {icon}",
-        "format": "{temperatureC}°C {icon}",
-        "format-icons": ""
+        "format-critical": "{temperatureC}°C ",
+        "format": "{temperatureC}°C "
+    },
+    "cpu": {
+        "format": "{icon0} {icon1} {icon2} {icon3} {icon4} {icon5} {icon6} {icon7}",
+        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+    },
+    "clock": {
+        // "timezone": "America/New_York",
+        "interval": 1,
+        "format": "{:%I:%M %p %A, %b %d, %Y}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d %R}"
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface

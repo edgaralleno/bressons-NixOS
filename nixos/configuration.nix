@@ -161,6 +161,7 @@
     calcurse				# text-based calendar client
     thunderbird				# email client
     gh					# github cli
+    eww					# elkowars wacky widgets
     ];
 
   # Some programs need SUID wrappers, can be configured further or are
