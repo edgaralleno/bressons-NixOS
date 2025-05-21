@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/natem/Desktop/goya_devourer_wal.jpg"
+let background = "#0B0F17"
+let foreground = "#c2c3c5"
+let cursor     = "#c2c3c5"
+
+" Colors
+let color0  = "#0B0F17"
+let color1  = "#514224"
+let color2  = "#434236"
+let color3  = "#534f39"
+let color4  = "#66512d"
+let color5  = "#5d6152"
+let color6  = "#78704b"
+let color7  = "#8e9298"
+let color8  = "#59616e"
+let color9  = "#6C5831"
+let color10 = "#5A5948"
+let color11 = "#6F6A4D"
+let color12 = "#896C3D"
+let color13 = "#7C826E"
+let color14 = "#A09664"
+let color15 = "#c2c3c5"

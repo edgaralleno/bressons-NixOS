@@ -1,0 +1,28 @@
+{
+    "checksum": "a4033049fdfd7b679a61cf2b8bf15097",
+    "wallpaper": "/home/natem/Desktop/Kandinsky_wallpaper.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0f0e0f",
+        "foreground": "#c3c2c3",
+        "cursor": "#c3c2c3"
+    },
+    "colors": {
+        "color0": "#0f0e0f",
+        "color1": "#7e5965",
+        "color2": "#4f6d7e",
+        "color3": "#787e75",
+        "color4": "#878d8a",
+        "color5": "#aaa77c",
+        "color6": "#a0a29b",
+        "color7": "#978d97",
+        "color8": "#6c586c",
+        "color9": "#A97787",
+        "color10": "#6A92A8",
+        "color11": "#A1A89C",
+        "color12": "#B4BDB8",
+        "color13": "#E3DFA6",
+        "color14": "#D6D9CF",
+        "color15": "#c3c2c3"
+    }
+}

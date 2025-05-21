@@ -1,0 +1,28 @@
+{
+    "checksum": "0fc811a93bdfacfb9b26cd22e70242f8",
+    "wallpaper": "/home/natem/Desktop/20250518_mygatt_road_0055.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#121812",
+        "foreground": "#c3c5c3",
+        "cursor": "#c3c5c3"
+    },
+    "colors": {
+        "color0": "#121812",
+        "color1": "#546c45",
+        "color2": "#687e53",
+        "color3": "#7b9b55",
+        "color4": "#5d6760",
+        "color5": "#737f6c",
+        "color6": "#849c72",
+        "color7": "#909a90",
+        "color8": "#5b705b",
+        "color9": "#70905D",
+        "color10": "#8BA86F",
+        "color11": "#A4CF72",
+        "color12": "#7C8A81",
+        "color13": "#9AAA90",
+        "color14": "#B0D199",
+        "color15": "#c3c5c3"
+    }
+}

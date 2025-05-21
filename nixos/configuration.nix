@@ -104,6 +104,9 @@
     # xorg.xcursorgen			# also trying to get rid of the stupid hyprland logo cursor
     nomacs				# photo viewer and cataloguer
     audacious				# music player!
+    ncmpcpp				# ncurses mpd client
+    mpd					# music player daemon
+    yams				# last.fm scrobbler for mpd
     swww				# a different wallpaper manager than hyprpaper
     waybar				# status bar!
     mpv					# media player
@@ -163,6 +166,8 @@
     gh					# github cli
     eww					# elkowars wacky widgets
     pywalfox-native			# for firefox and thudnerbird styling
+    rxvt-unicode			# rxvt terminal emu
+    screenfetch				# system info displayer for screenshots for unixporn
     ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -216,6 +221,8 @@
       nssmdns4 = true;
       openFirewall = true;
     };
+    
+    services.mpd.enable = true;
 
     #Fonts!
     fonts.packages = with pkgs; [

@@ -1,0 +1,67 @@
+* {
+    font-family: 'FiraMono Nerd Font Propo', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    /*background-color: rgb(255,255,255);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0;
+    color: rgb(0, 0, 0);
+    box-shadow: none;*/
+    padding: 0;
+    margin: 0;
+}
+
+window#waybar {
+    background-color: rgba(0, 0, 0, 0);
+    color: #c2c3c5;
+    border: none;
+}
+
+label.module {
+    border: none;
+    padding: 0 5px;
+}
+
+.modules-left, .modules-center, .modules-right {
+    background-color: #896C3D;
+    color: #c2c3c5;
+}
+
+.modules-left {
+    border-radius: 0 0 15px 0;
+    padding-right: 5px;
+    border-bottom: 2px solid #66512d;
+    border-right: 2px solid #66512d;
+}
+
+.modules-center {
+    border-radius: 0 0 15px 15px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-left: 2px solid #66512d;
+    border-bottom: 2px solid #66512d;
+    border-right: 2px solid #66512d;
+}
+
+.modules-right {
+    border-radius: 0 0 0 15px;
+    padding-left: 5px;
+    border-bottom: 2px solid #66512d;
+    border-left: 2px solid #66512d;
+}
+
+#workspaces button {
+    border: none;
+    padding: 0 5px;
+    color: inherit;
+    border-radius: 0;
+}
+
+#workspaces button.active {
+    background-color: #7C826E;
+}
+
+#window {
+    border: none;
+    padding: 0 5px;
+}
