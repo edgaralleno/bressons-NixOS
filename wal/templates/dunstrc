@@ -1,0 +1,67 @@
+[global]
+
+    # Display choice
+    moitor = 0
+
+    #POSIX REGEX
+    enable_posix_regex = true
+
+    #Geometry and location
+    width = 300
+    height = (0, 300)
+    origin = top-right # Accepts top-(left|center|right), bottom-(left|center|right), left-center, center, right-center
+    offset = (8, 40)
+    notification_limit = 25
+
+    ## Progress bar default settings
+    #progress_bar = true
+    #progress_bar_horizontal_alignment = center # Accepts left/center/right
+    #progress+bar_height = 10
+    #progress_bar_min_width = 150
+    #progress_bar_max_width = 300
+    #progress_bar_frame_width = 1
+    #progress_bar_corner_radius = 0
+    #progress_bar_corners = all # Same value formats as corners setting
+
+    indicate_hidden = true
+    
+    # Style and look
+    padding = 6
+    horizontal_padding = 6
+    frame_width = 2
+    frame_color = "{color13}"
+    background = "{background}40"
+    gap_size = 2
+    corner_radius = 5
+    corners = all
+
+    #Sort type
+    sort = urgency_descending
+
+    #Font and type
+    font = FiraMono Nerd Font Propo 13
+    format = "%a\n<b>%s</b>\n%b"
+    line_height = 2
+    vertical_alignment = center
+    ellipsize = middle
+    
+    #stacking duplicates
+    stack_duplicates = true # Notifs are considered duplicate when program, summary, body, icon and urgency all match
+
+    show_indicators = true
+
+    sticky_history = true # Notifs recalled from history won't time out
+
+    # Mouse-click actions
+    mouse_left_click = do_action, close_current
+    mouse_right_click = close_current
+    mouse_middle_click = close_all
+
+[urgency_critical]
+    background = "#900000"
+    foreground = "#ffffff"
+    frame_color = "#ff0000"
+    timeout = 0
+    override_pause_level = 60
+    # Icon for notifications with critical urgency
+    default_icon = dialog-warning

@@ -1,0 +1,28 @@
+{
+    "checksum": "d94e0ff7536d30d184934e86843e544f",
+    "wallpaper": "/home/natem/Desktop/goya_devourer_wal.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0B0F17",
+        "foreground": "#c2c3c5",
+        "cursor": "#c2c3c5"
+    },
+    "colors": {
+        "color0": "#0B0F17",
+        "color1": "#4c4028",
+        "color2": "#4e4b2a",
+        "color3": "#5b5430",
+        "color4": "#5f4f33",
+        "color5": "#66743e",
+        "color6": "#7e7444",
+        "color7": "#8e9298",
+        "color8": "#59616e",
+        "color9": "#665636",
+        "color10": "#696638",
+        "color11": "#7a7141",
+        "color12": "#806a45",
+        "color13": "#869c53",
+        "color14": "#a79b5c",
+        "color15": "#c2c3c5"
+    }
+}

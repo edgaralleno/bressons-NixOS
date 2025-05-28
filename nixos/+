@@ -101,7 +101,6 @@
     wl-clipboard			# self-explanatory
     ripgrep 				# necessary for clipboard stuff I think
     soulseekqt 				# P2P file sharing
-    nicotine-plus			# slsk client
     libnotify 				# Necessary for dunst
     nextcloud-client			# cloud storage client
     vim					# reinstalled this because it was necessary for something. can't remember what
@@ -110,8 +109,9 @@
     # xorg.xcursorthemes		# trying to get rid of the stupid hyprland logo cursor
     # xorg.xcursorgen			# also trying to get rid of the stupid hyprland logo cursor
     nomacs				# photo viewer and cataloguer
-    # audacious				# music player!
+    audacious				# music player!
     ncmpcpp				# ncurses mpd client
+    # mpd					# music player daemon
     mpc
     kew					# music player clients
     yams				# last.fm scrobbler for mpd
@@ -185,8 +185,6 @@
     # kdePackages.kdeconnect-kde          # kdeconnect
     valent				# implementation of the kde connect protocol?
     netcat-gnu
-    khal				#  webDAV compatible calendar client
-    vdirsyncer
     ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -257,17 +255,10 @@
     
     services.mpd = {
         enable = true;
-	musicDirectory = "/home/natem/Storage/Music/Library/";
 	extraConfig = ''
 	  audio_output {
 	      type "pipewire"
 	      name "Pipewire"
-	  }
-	  audio_output {
-	      type "fifo"
-	      name "Visualization feed"
-	      path "/tmp/mpd.fifo"
-	      format "44100:16:2"
 	  }
 	'';
 	network.listenAddress = "any";

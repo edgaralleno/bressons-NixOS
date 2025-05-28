@@ -8,9 +8,11 @@
     "modules-left": [
         "hyprland/workspaces",
 	"hyprland/window"
+	// "custom/mpd"
     ],
     "modules-center": [
-        "clock"
+        "clock",
+	"custom/mpd"
     ],
     "modules-right": [
         "idle_inhibitor",
@@ -45,12 +47,12 @@
             "class<.*launcher.*>": "󱓟"
         }
     },
-    "hyprland/windows": {
-	"format": "{class}|{title}",
+    "hyprland/window": {
+	"format": "{class} | {title}",
 	"rewrite": {
-	    "(firefox)(.*)(— Mozilla Firefox)": " $2",
+	    "(firefox)(.*)(— Mozilla Firefox)": "$2",
             "(.*)(natem@nixos)(.*)": "$3",
-            "(Darktable) (darktable)": "󰄄 $1",
+            "(Darktable) (darktable)": "󰄄$1",
             "(.*)(DB Browser for SQLite)(.*)": "$3",
             "(audacious)(.*)": "$2",
             "(WebCord)(.*)": "$2",
@@ -61,7 +63,8 @@
             "(.*gimpg.*)(.*)": "$2",
             "(.*minecraft.*)(.*)": "󰍳$2",
             "(.*launcher.*)(.*)": "󱓟$2"
-        }
+        },
+	"separate-outputs": true
     },
     "clock": {
 	"interval": 1,
@@ -69,6 +72,15 @@
 	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
 	"format-alt": "{:%R %F}"
     },
+    "custom/mpd": {
+	"format": "♪ {}",
+        //"max-length": 15,
+        "interval": 10, 
+        "exec": "mpc current", 
+        "exec-if": "pgrep mpd",
+        "on-click": "mpc toggle",
+        "on-click-right": "sonata"
+    },   
     "idle_inhibitor": {
 	"format": "{icon}",
         "format-icons": {

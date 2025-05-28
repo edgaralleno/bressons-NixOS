@@ -3,7 +3,7 @@
 # script that should copy my config files
 #
 
-rm -r hypr/ nixos/ waybar/
+rm -r ~/Storage/Nextcloud/config_bak/hypr/ ~/Storage/Nextcloud/config_bak/nixos/ ~/Storage/Nextcloud/config_bak/waybar/
 cp -r ~/.config/hypr/ ~/.config/waybar/ /etc/nixos/ -t ~/Storage/Nextcloud/config_bak/
 cp -r ~/.cache/wal/ -t ~/Storage/Nextcloud/config_bak/wal_cache/
 cp -r ~/.config/wal/ -t ~/Storage/Nextcloud/config_bak/wal_config/
