@@ -1,7 +1,7 @@
 # bressons-NixOS
 a repository for my nix config for troubleshooting
 
-Next goals —
+# Next goals —
     1. Complete the breaking up of my hyprland config.
     2. Consider similar structuring for other known config types, like
        waybar.
